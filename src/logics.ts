@@ -68,7 +68,7 @@ const update = async (
 
   const queryResult: MovieResult = await client.query(queryFormat, [id]);
 
-  return response.status(201).json(queryResult.rows[0]);
+  return response.status(200).json(queryResult.rows[0]);
 };
 
 const erase = async (
